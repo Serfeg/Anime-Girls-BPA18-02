@@ -62,7 +62,7 @@
                           <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                               <ul class="list-group"> <!-- указать значения параметров-->
-                                <li class="list-group-item">Сила <span> 7 </span></li>
+                                <li class="list-group-item">Сила <span> 9 </span></li>
                                 <li class="list-group-item">Интеллект <span> 4 </span></li>
                                 <li class="list-group-item">Ловкость <span> 5 </span></li>
                                 <li class="list-group-item">Кокетливость <span> 10 </span></li>
@@ -73,12 +73,14 @@
                         <div class="accordion-item">
                           <h2 class="accordion-header" id="headingTwo">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                              Описание
+                              На первый взгляд милая милость не опасна, но это пока в руках есть что-то вкусное). В ярости она сносит все на своем пути. Утехомирить Donut можно, 
+							  но никто так и не нашел подход к ней. Ходят легенды, что она способна спалить целый замок, который не покарялся драконам, всего за 10 секунд 
                             </button>
                           </h2>
                           <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                             <div class="accordion-body"> <!-- описание способнсотей персонажа-->
-                              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                              <strong>This is the second item's accordion body.</strong> На первый взгляд милая милость не опасна, но это пока в руках есть что-то вкусное). В ярости она сносит все на своем пути. Утехомирить Donut можно, 
+							  но никто так и не нашел подход к ней. Ходят легенды, что она способна спалить целый замок, который не покарялся драконам, всего за 10 секунд .
                             </div>
                           </div>
                         </div>
