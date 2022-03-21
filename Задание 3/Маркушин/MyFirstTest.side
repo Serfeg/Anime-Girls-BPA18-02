@@ -1,0 +1,61 @@
+{
+  "id": "cb2b4fe9-e932-4d19-82b0-dc45a60edad0",
+  "version": "2.0",
+  "name": "MyFirstTest",
+  "url": "http://localhost/site/main.html",
+  "tests": [{
+    "id": "facbbfa4-2fee-4164-8936-11dca04a986e",
+    "name": "Untitled",
+    "commands": [{
+      "id": "b95d463b-6660-4e53-80a8-bb9e34374e24",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/site/main.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2ae2127e-ccba-4086-8d06-6c678332263c",
+      "comment": "",
+      "command": "storeText",
+      "target": "xpath=//a[contains(text(),'Джозеф Джостар')]",
+      "targets": [
+        ["linkText=Джозеф Джостар", "linkText"],
+        ["css=#Markushin .postcard__title > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Джозеф Джостар')]", "xpath:link"],
+        ["xpath=//article[@id='Markushin']/div/h1/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, './Markushin.html')])[2]", "xpath:href"],
+        ["xpath=//article[5]/div/h1/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Джозеф Джостар')]", "xpath:innerText"]
+      ],
+      "value": "var1"
+    }, {
+      "id": "6d441329-74d6-4f66-ba2b-3fb52f68b5ef",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=${var1}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a7b145f6-83b3-4d8d-8c33-f0db35cace72",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.card-title",
+      "targets": [
+        ["css=.card-title", "css:finder"],
+        ["xpath=//h5", "xpath:position"],
+        ["xpath=//h5[contains(.,'Джозеф Джостар')]", "xpath:innerText"]
+      ],
+      "value": "${var1}"
+    }]
+  }],
+  "suites": [{
+    "id": "33bdda05-e58d-4f48-a47d-aa045a641cff",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["facbbfa4-2fee-4164-8936-11dca04a986e"]
+  }],
+  "urls": ["http://localhost/site/main.html"],
+  "plugins": []
+}
