@@ -14,18 +14,15 @@
       "targets": [],
       "value": ""
     }, {
-      "id": "2ae2127e-ccba-4086-8d06-6c678332263c",
+      "id": "92dfdace-8a93-4222-9ae1-70fb2497c3b8",
       "comment": "",
       "command": "storeText",
-      "target": "xpath=//a[contains(text(),'Джозеф Джостар')]",
+      "target": "css=#Markushin .postcard__title",
       "targets": [
-        ["linkText=Джозеф Джостар", "linkText"],
-        ["css=#Markushin .postcard__title > a", "css:finder"],
-        ["xpath=//a[contains(text(),'Джозеф Джостар')]", "xpath:link"],
-        ["xpath=//article[@id='Markushin']/div/h1/a", "xpath:idRelative"],
-        ["xpath=(//a[contains(@href, './Markushin.html')])[2]", "xpath:href"],
-        ["xpath=//article[5]/div/h1/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Джозеф Джостар')]", "xpath:innerText"]
+        ["css=#Markushin .postcard__title", "css:finder"],
+        ["xpath=//article[@id='Markushin']/div/h1", "xpath:idRelative"],
+        ["xpath=//article[5]/div/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Джозеф Джостар')]", "xpath:innerText"]
       ],
       "value": "var1"
     }, {
@@ -53,41 +50,6 @@
         ["xpath=//h5[contains(.,'Джозеф Джостар')]", "xpath:innerText"]
       ],
       "value": "${var1}"
-    }, {
-      "id": "dedffeb1-c772-4cc5-b4fb-7f1283b15b6e",
-      "comment": "",
-      "command": "if",
-      "target": "${statusOK} == false",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "39ecf5f7-3415-438f-a844-db3818847514",
-      "comment": "",
-      "command": "echo",
-      "target": "Заголовок не совпадает с именем",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "cd659884-d8f3-42c3-a0d7-daf7aed59add",
-      "comment": "",
-      "command": "else",
-      "target": "",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "d0e5b58e-f06d-485a-80d5-5547b45991ac",
-      "comment": "",
-      "command": "echo",
-      "target": "Заголовок совпадает с именем",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "50b6194f-96b3-4097-a6e4-ea4d32f455a3",
-      "comment": "",
-      "command": "end",
-      "target": "",
-      "targets": [],
-      "value": ""
     }, {
       "id": "96b73a10-3632-4236-aee8-5c20907f9a0e",
       "comment": "",
@@ -194,13 +156,6 @@
       "target": "arr",
       "targets": [],
       "value": "i"
-    }, {
-      "id": "00b462d2-b707-4f41-906f-079dbba159fc",
-      "comment": "",
-      "command": "echo",
-      "target": "${i}",
-      "targets": [],
-      "value": ""
     }, {
       "id": "43970443-73bc-47cd-ad19-5590a8b23a3e",
       "comment": "",
