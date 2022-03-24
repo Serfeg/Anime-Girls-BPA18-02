@@ -1,0 +1,137 @@
+{
+  "id": "3c4e8f84-53e1-4533-9bfc-bc07f0208b6b",
+  "version": "2.0",
+  "name": "test",
+  "url": "http://172.16.175.3/htdocs/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%201/main.html",
+  "tests": [{
+    "id": "9458fd4d-2162-4042-baa5-28b27714659d",
+    "name": "Untitled",
+    "commands": [{
+      "id": "9ca1ed24-56ed-46f2-b7fe-407caadfaf2f",
+      "comment": "",
+      "command": "open",
+      "target": "http://172.16.175.3/htdocs/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%201/main.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f3ea6b97-b8e1-40d6-a120-615cac6e0b30",
+      "comment": "",
+      "command": "storeText",
+      "target": "xpath=//a[contains(text(),'Дюдюка Барбидоса')]",
+      "targets": [],
+      "value": "name"
+    }, {
+      "id": "92822ca5-f47d-44ec-b780-80d8de21f923",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=${name}",
+      "targets": [
+        ["linkText=Дюдюка Барбидоса", "linkText"],
+        ["css=.dark > .postcard__text > .blue > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Дюдюка Барбидоса')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, './Benko.html')])[2]", "xpath:href"],
+        ["xpath=//h1/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Дюдюка Барбидоса')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "34232bca-3eed-48cf-816c-3cb5f307346b",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h5.card-title",
+      "targets": [],
+      "value": "${name}"
+    }, {
+      "id": "9a8e0789-7533-41a0-945c-6fc1cd2a468b",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.card > img",
+      "targets": [
+        ["css=.card > img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://www.pngitem.com/pimgs/m/11-115600_transparent-anime-girl-with-brown-hair-png-anime.png')]", "xpath:img"],
+        ["xpath=//div/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee32428d-01b1-43be-8718-a661baa83c49",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.element",
+      "targets": [
+        ["css=.element", "css:finder"],
+        ["xpath=//div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c73fa951-a7f4-4ee0-9a70-d1962abbb162",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=#collapseOne > .accordion-body",
+      "targets": [
+        ["css=#collapseOne > .accordion-body", "css:finder"],
+        ["xpath=//div[@id='collapseOne']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "473b698f-68af-44d0-b0e3-a8c24a081df7",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=#collapseTwo > .accordion-body",
+      "targets": [
+        ["css=#collapseTwo > .accordion-body", "css:finder"],
+        ["xpath=//div[@id='collapseTwo']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c07a78d3-5697-454c-a55c-43eb6bec1b1e",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.list-group-item:nth-child(1) > span",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1e8c5c30-c770-4318-bd50-fdf73f356f91",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.list-group-item:nth-child(2) > span",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1a7e0b74-0380-4c01-8d1b-2b96aa631f31",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.list-group-item:nth-child(3) > span",
+      "targets": [
+        ["css=.list-group-item:nth-child(3) > span", "css:finder"],
+        ["xpath=//div[@id='collapseOne']/div/ul/li[3]/span", "xpath:idRelative"],
+        ["xpath=//li[3]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'6')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8bff6e3c-f887-4cb0-abc5-33d815ccbabe",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.list-group-item:nth-child(4) > span",
+      "targets": [
+        ["css=.list-group-item:nth-child(4) > span", "css:finder"],
+        ["xpath=//div[@id='collapseOne']/div/ul/li[4]/span", "xpath:idRelative"],
+        ["xpath=//li[4]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'1')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "e25e02a4-7578-430c-bc7f-caf3d8f78218",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["9458fd4d-2162-4042-baa5-28b27714659d"]
+  }],
+  "urls": ["http://172.16.175.3/htdocs/%d0%97%d0%b0%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5%201/main.html", "http://172.16.175.3/htdocs/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%201/main.html"],
+  "plugins": []
+}
