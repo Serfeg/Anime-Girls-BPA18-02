@@ -1,0 +1,67 @@
+{
+  "id": "06c25bd9-4ae6-48c1-bab0-bdc6da758194",
+  "version": "2.0",
+  "name": "testanime",
+  "url": "http://testanime/main.html",
+  "tests": [{
+    "id": "ab47527d-6157-4dd3-b29c-d629052ebed7",
+    "name": "1",
+    "commands": [{
+      "id": "953d21ff-54c6-41b0-ac51-9ba1a5922601",
+      "comment": "",
+      "command": "open",
+      "target": "http://testanime/main.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "324c2429-d5e7-4658-a9bd-06cbcfb91daf",
+      "comment": "",
+      "command": "storeText",
+      "target": "xpath=//a[contains(text(),'Миссис Хадсон')]",
+      "targets": [],
+      "value": "myVarXpath"
+    }, {
+      "id": "77f66bdd-ff3f-498f-b316-a91f73aa1c13",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=#Makarov .postcard__title",
+      "targets": [],
+      "value": "NameToId"
+    }, {
+      "id": "206238a3-6f09-46b2-8626-4a6113a0183a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=${NameToId}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2c3c7b56-20f5-47fb-a8d7-4ee9d0ff1bc7",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.card-title",
+      "targets": [],
+      "value": "${myVarXpath}"
+    }, {
+      "id": "14ed2f12-a562-4df5-a8ca-3593dd6f5771",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.card-text",
+      "targets": [
+        ["css=.card-text", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Харизматичная и экстравагантная управляющая баром «PipeCat». Бывшего мужа как ветром сдуло, так что наша героия сильная и независимя женщина готовая к бою.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "5baa10b6-7ac0-4633-860a-281ab7d1a9df",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ab47527d-6157-4dd3-b29c-d629052ebed7"]
+  }],
+  "urls": ["http://testanime/main.html"],
+  "plugins": []
+}
