@@ -1,0 +1,140 @@
+{
+  "id": "157b2d15-867d-459b-b6da-7876259dd7cf",
+  "version": "2.0",
+  "name": "anime_girls",
+  "url": "http://myphp/anime_girls/main.html",
+  "tests": [{
+    "id": "bfa5b03e-2f35-49da-8814-6b1ebae43b71",
+    "name": "findName",
+    "commands": [{
+      "id": "98946b50-be1a-4df9-8f18-8d3d917e4c07",
+      "comment": "",
+      "command": "open",
+      "target": "http://myphp/anime_girls/main.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "151bb235-97a3-4c8a-a91c-c79f6f5f05d0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "948x864",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "295b9b92-8c60-4524-b7e6-16739c617433",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=#Shirnin .postcard__title",
+      "targets": [],
+      "value": "nameGirl"
+    }, {
+      "id": "7d6bce8e-e8b2-4cb6-bf0d-59089abd115a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=${nameGirl}",
+      "targets": [
+        ["linkText=Анна Кёяма", "linkText"],
+        ["css=.t-dark > .red > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Анна Кёяма')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, './Shirnin.html')])[2]", "xpath:href"],
+        ["xpath=//section[2]/div/article[2]/div/h1/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Анна Кёяма')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "34d5d203-ce08-47fa-92c0-26e9b2fba7e7",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.card > img",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9f1fac8b-191a-40cc-b71c-4724f4f5e1d7",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.card > .element",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "54310570-6735-47f3-bcb9-924b0fa865db",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.card-title",
+      "targets": [],
+      "value": "${nameGirl}"
+    }, {
+      "id": "e2acb1b9-42d2-4cad-bd2e-f4a17767534b",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.card-text",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2a166501-5939-442e-a2ec-c24e0beb5b35",
+      "comment": "",
+      "command": "verifyElementNotPresent",
+      "target": "btn",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0b53ac90-113d-4926-bfe2-e1efa8801e29",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=#headingOne .accordion-button",
+      "targets": [],
+      "value": "Характеристики"
+    }, {
+      "id": "31c304a2-1a4b-4d52-9465-b9918a8ec6a2",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.list-group-item:nth-child(1)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5d904cd5-d0e9-4ce0-ba71-9adb6dca52fa",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.list-group-item:nth-child(2)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "04a512c4-c576-4751-af67-581f605bd81a",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.list-group-item:nth-child(3)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "de13d66c-cd2a-4cd0-8a03-95747efc3e09",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.list-group-item:nth-child(4)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "917cab03-6db3-4c69-8d62-15c7d91283ca",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#headingTwo .accordion-button",
+      "targets": [],
+      "value": "Описание"
+    }, {
+      "id": "863da041-cb44-4e00-b7b3-fa329ba59607",
+      "comment": "",
+      "command": "click",
+      "target": "css=#headingTwo .accordion-button",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "10418bd1-b564-4b24-b11c-5d10e202b635",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["bfa5b03e-2f35-49da-8814-6b1ebae43b71"]
+  }],
+  "urls": ["http://myphp/anime_girls/main.html"],
+  "plugins": []
+}
