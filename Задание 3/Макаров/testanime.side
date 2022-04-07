@@ -1,0 +1,164 @@
+{
+  "id": "06c25bd9-4ae6-48c1-bab0-bdc6da758194",
+  "version": "2.0",
+  "name": "testanime",
+  "url": "http://testanime/main.html",
+  "tests": [{
+    "id": "ab47527d-6157-4dd3-b29c-d629052ebed7",
+    "name": "1",
+    "commands": [{
+      "id": "953d21ff-54c6-41b0-ac51-9ba1a5922601",
+      "comment": "",
+      "command": "open",
+      "target": "http://testanime/main.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "324c2429-d5e7-4658-a9bd-06cbcfb91daf",
+      "comment": "",
+      "command": "storeText",
+      "target": "xpath=//a[contains(text(),'Хадсон')]",
+      "targets": [],
+      "value": "myVarXpath"
+    }, {
+      "id": "77f66bdd-ff3f-498f-b316-a91f73aa1c13",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=#Makarov .postcard__title",
+      "targets": [],
+      "value": "NameToId"
+    }, {
+      "id": "206238a3-6f09-46b2-8626-4a6113a0183a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=${NameToId}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2c3c7b56-20f5-47fb-a8d7-4ee9d0ff1bc7",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.card-title",
+      "targets": [],
+      "value": "${myVarXpath}"
+    }, {
+      "id": "14ed2f12-a562-4df5-a8ca-3593dd6f5771",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.list-group-item:nth-child(1)",
+      "targets": [
+        ["css=.list-group-item:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='collapseOne']/div/ul/li", "xpath:idRelative"],
+        ["xpath=//li", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8dd5f170-7312-4ae8-a187-1f2ab1ca58c1",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.list-group-item:nth-child(1) > span",
+      "targets": [],
+      "value": "9"
+    }, {
+      "id": "942fa4c6-13e4-4990-b098-7d1236eee75b",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.list-group-item:nth-child(2)",
+      "targets": [
+        ["css=.list-group-item:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='collapseOne']/div/ul/li[2]", "xpath:idRelative"],
+        ["xpath=//li[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c187023c-f9a4-47c2-bb2d-b9404353483c",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.list-group-item:nth-child(2) > span",
+      "targets": [],
+      "value": "6"
+    }, {
+      "id": "8334826a-cb2b-42f0-8408-58e82426661f",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.list-group-item:nth-child(3)",
+      "targets": [
+        ["css=.list-group-item:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='collapseOne']/div/ul/li[2]", "xpath:idRelative"],
+        ["xpath=//li[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e1a0116a-b32a-4f7b-ac8c-c788c34d4fb5",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.list-group-item:nth-child(3) > span",
+      "targets": [],
+      "value": "4"
+    }, {
+      "id": "4db8393c-36ef-4d81-b655-a03a5cdf4435",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.list-group-item:nth-child(4)",
+      "targets": [
+        ["css=.list-group-item:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='collapseOne']/div/ul/li[2]", "xpath:idRelative"],
+        ["xpath=//li[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d079e333-ec10-4ab7-b38f-380036455104",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.list-group-item:nth-child(4) > span",
+      "targets": [],
+      "value": "8"
+    }, {
+      "id": "bc73daad-2574-4c1e-a342-e8540a955453",
+      "comment": "",
+      "command": "click",
+      "target": "css=#headingTwo > .accordion-button",
+      "targets": [
+        ["css=#headingTwo > .accordion-button", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//h2[@id='headingTwo']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/h2/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Описание')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0570603d-c7a5-429e-bd1f-6fc5b8a86c27",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=#collapseTwo > .accordion-body",
+      "targets": [
+        ["css=#collapseTwo > .accordion-body", "css:finder"],
+        ["xpath=//div[@id='collapseTwo']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "18792bf0-0f47-4357-a341-8bd0978cc6fd",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=strong",
+      "targets": [
+        ["css=strong", "css:finder"],
+        ["xpath=//div[@id='collapseTwo']/div/strong", "xpath:idRelative"],
+        ["xpath=//strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Шотландский ветерок изящности.')]", "xpath:innerText"]
+      ],
+      "value": "Шотландский ветерок изящности."
+    }]
+  }],
+  "suites": [{
+    "id": "5baa10b6-7ac0-4633-860a-281ab7d1a9df",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ab47527d-6157-4dd3-b29c-d629052ebed7"]
+  }],
+  "urls": ["http://testanime/main.html"],
+  "plugins": []
+}

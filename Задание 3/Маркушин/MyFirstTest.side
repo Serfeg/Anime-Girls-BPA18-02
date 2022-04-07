@@ -1,0 +1,199 @@
+{
+  "id": "cb2b4fe9-e932-4d19-82b0-dc45a60edad0",
+  "version": "2.0",
+  "name": "MyFirstTest",
+  "url": "http://localhost/site/main.html",
+  "tests": [{
+    "id": "facbbfa4-2fee-4164-8936-11dca04a986e",
+    "name": "FirstScript",
+    "commands": [{
+      "id": "b95d463b-6660-4e53-80a8-bb9e34374e24",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/site/main.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "92dfdace-8a93-4222-9ae1-70fb2497c3b8",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=#Markushin .postcard__title",
+      "targets": [
+        ["css=#Markushin .postcard__title", "css:finder"],
+        ["xpath=//article[@id='Markushin']/div/h1", "xpath:idRelative"],
+        ["xpath=//article[5]/div/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Джозеф Джостар')]", "xpath:innerText"]
+      ],
+      "value": "var1"
+    }, {
+      "id": "6d441329-74d6-4f66-ba2b-3fb52f68b5ef",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=${var1}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e32da70b-983a-46f9-83b8-bda23f3b1fbf",
+      "comment": "",
+      "command": "store",
+      "target": "true",
+      "targets": [],
+      "value": "statusOK"
+    }, {
+      "id": "a7b145f6-83b3-4d8d-8c33-f0db35cace72",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.card-title",
+      "targets": [
+        ["css=.card-title", "css:finder"],
+        ["xpath=//h5", "xpath:position"],
+        ["xpath=//h5[contains(.,'Джозеф Джостар')]", "xpath:innerText"]
+      ],
+      "value": "${var1}"
+    }, {
+      "id": "96b73a10-3632-4236-aee8-5c20907f9a0e",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.card-text",
+      "targets": [
+        ["css=.card-text", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Джозеф - прирожденный пользователь Хамона и, в конечном итоге, пользователь Стенда, владеющий экстрасенсорным фотографическим стендом, Hermit Purple. Буйный правонарушитель с исключительным талантом к хитрости, Джозеф с инициативой и впечатляющей изобретательностью противостоит фантастическим угрозам, подступающим к нему на протяжении всей жизни, сражаясь с вампирами, Людьми из колонн и вражескими пользователями стендов.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "79721576-ef75-46f0-91d9-269ee6e4f0db",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=#collapseOne > .accordion-body",
+      "targets": [
+        ["css=#collapseOne > .accordion-body", "css:finder"],
+        ["xpath=//div[@id='collapseOne']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "073fca8f-ce6a-4b2a-817a-c864c157415c",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.card > img",
+      "targets": [
+        ["css=.card > img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://i.ytimg.com/vi/RiWbJ0UW1zE/maxresdefault.jpg')]", "xpath:img"],
+        ["xpath=//div/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9e075dc7-9a55-4cdf-a794-aa74020e9b75",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=#collapseTwo > .accordion-body",
+      "targets": [
+        ["css=#collapseTwo > .accordion-body", "css:finder"],
+        ["xpath=//div[@id='collapseTwo']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d5ef09d8-80bf-486e-9453-4a8f81097bf5",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.list-group-item:nth-child(1) > span",
+      "targets": [
+        ["css=.list-group-item:nth-child(1) > span", "css:finder"],
+        ["xpath=//div[@id='collapseOne']/div/ul/li/span", "xpath:idRelative"],
+        ["xpath=//li/span", "xpath:position"],
+        ["xpath=//span[contains(.,'8')]", "xpath:innerText"]
+      ],
+      "value": "strength"
+    }, {
+      "id": "ca870ea0-796d-426e-ab50-5de73a2ec55a",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.list-group-item:nth-child(2) > span",
+      "targets": [
+        ["css=.list-group-item:nth-child(2) > span", "css:finder"],
+        ["xpath=//div[@id='collapseOne']/div/ul/li[2]/span", "xpath:idRelative"],
+        ["xpath=//li[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'5')]", "xpath:innerText"]
+      ],
+      "value": "intelligence"
+    }, {
+      "id": "a772e8e6-b9dc-4b26-8346-2bb5edb076ab",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.list-group-item:nth-child(3) > span",
+      "targets": [
+        ["css=.list-group-item:nth-child(3) > span", "css:finder"],
+        ["xpath=//div[@id='collapseOne']/div/ul/li[3]/span", "xpath:idRelative"],
+        ["xpath=//li[3]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'6')]", "xpath:innerText"]
+      ],
+      "value": "agility"
+    }, {
+      "id": "fc0875f8-6d98-4e28-9ea4-8ecc420425cf",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.list-group-item:nth-child(4) > span",
+      "targets": [
+        ["css=.list-group-item:nth-child(4) > span", "css:finder"],
+        ["xpath=//div[@id='collapseOne']/div/ul/li[4]/span", "xpath:idRelative"],
+        ["xpath=//li[4]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'10')]", "xpath:innerText"]
+      ],
+      "value": "coquetry"
+    }, {
+      "id": "90d4f5b2-3e5d-45ca-80ab-2cb43c64343f",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return [${strength}, ${intelligence}, ${agility}, ${coquetry}]",
+      "targets": [],
+      "value": "arr"
+    }, {
+      "id": "b279290f-4ce3-4ce3-b563-35f640de3677",
+      "comment": "",
+      "command": "forEach",
+      "target": "arr",
+      "targets": [],
+      "value": "i"
+    }, {
+      "id": "43970443-73bc-47cd-ad19-5590a8b23a3e",
+      "comment": "",
+      "command": "if",
+      "target": "${i} > 10 && ${i} < 0",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b858dbb3-439f-404e-8945-ffb014993ab0",
+      "comment": "",
+      "command": "echo",
+      "target": "Печаль беда",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4b3ff2f4-7c15-472f-ab6d-d7de9fdf1ab4",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "81bc88a7-6928-47cb-a02b-33f07f67f44d",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "33bdda05-e58d-4f48-a47d-aa045a641cff",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["facbbfa4-2fee-4164-8936-11dca04a986e"]
+  }],
+  "urls": ["http://localhost/site/main.html"],
+  "plugins": []
+}
