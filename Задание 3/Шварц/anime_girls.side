@@ -1,0 +1,119 @@
+{
+  "id": "157b2d15-867d-459b-b6da-7876259dd7cf",
+  "version": "2.0",
+  "name": "anime_girls",
+  "url": "http://myphp/anime_girls/main.html",
+  "tests": [{
+    "id": "bfa5b03e-2f35-49da-8814-6b1ebae43b71",
+    "name": "findName",
+    "commands": [{
+      "id": "98946b50-be1a-4df9-8f18-8d3d917e4c07",
+      "comment": "",
+      "command": "open",
+      "target": "http://selenium.gg/main.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "295b9b92-8c60-4524-b7e6-16739c617433",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=#Schwartz .postcard__title",
+      "targets": [],
+      "value": "heroName"
+    }, {
+      "id": "7d6bce8e-e8b2-4cb6-bf0d-59089abd115a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=${heroName}",
+      "targets": [
+        ["linkText=Анна Кёяма", "linkText"],
+        ["css=.t-dark > .red > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Анна Кёяма')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, './Shirnin.html')])[2]", "xpath:href"],
+        ["xpath=//section[2]/div/article[2]/div/h1/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Анна Кёяма')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "aeb74341-06ea-4c0e-9607-d8446dd2e356",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.card-title",
+      "targets": [],
+      "value": "${heroName}"
+    }, {
+      "id": "0fdc241e-e788-431d-8451-1a85c3a6f3a3",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.card > img",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f2b5679b-9a20-4f21-a848-c096dec655d3",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.card-text",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cd931f5e-097a-4839-ba56-e118dd9391ae",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.element",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "98c77411-3e60-4f87-b327-aff8e35977da",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=#collapseOne > .accordion-body",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d3b2bc09-07de-43d5-b436-ff0422ed4294",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=#collapseTwo > .accordion-body",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8b25170b-aa2e-46a7-bed8-95ac1acfedb1",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.list-group-item:nth-child(1) > span",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dbc676b7-bb6f-4a08-ac5f-bd1bd4966ae2",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.list-group-item:nth-child(2) > span",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c1369b09-7384-4ecc-aaa8-2dcdc2e07f42",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.list-group-item:nth-child(3) > span",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "18c1c7dc-0e58-47aa-95a6-020c8fb95b16",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.list-group-item:nth-child(4) > span",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "10418bd1-b564-4b24-b11c-5d10e202b635",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["bfa5b03e-2f35-49da-8814-6b1ebae43b71"]
+  }],
+  "urls": ["http://myphp/anime_girls/main.html"],
+  "plugins": []
+}
